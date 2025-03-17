@@ -130,7 +130,7 @@ resource "aws_instance" "myapp-server" {
   }
 
   provisioner "remote-exec" {
-    inline = ["/home/ec2-user/entry-script.sh"]
+    inline = ["/home/ec2-user/entry-script-on-ec2.sh"]
   }
 
   provisioner "local-exec" {
